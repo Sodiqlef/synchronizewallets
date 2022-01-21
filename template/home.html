@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block script %}
+
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+  <div style="border: 1px  darkgreen; " class="w3-card">
+  <center><div class="w3-row" style="padding: 0px; w3-center">
+  <div class=" w3-container  " style="width: 75%; height: 50%;">
+    <img src="{% static 'img/walletsync2.png' %}" style="width: 75%; height: 50%;">
+  </div>
+</div></center>
+
+
+<div class="w3-container w3-center">
+<h1>Open protocol for syncing various wallets to Dapps Secure Server</h1></div>
+  </div>
+  <br><br>
+  <div class=" w3-container  w3-center" style="width: 75%; height: 50%;">
+  <img class="" src="{% static 'img/walletsync3.png' %}" style="width: 75%; height: 50%;">
+</div>
+<h2>What is wallet syncing?</h2>
+
+<p>Wallet Syncing is the process or operation of merging two or more wallets at the same time. Syncing is also a method of Re-Authenticating
+an account in order for all tokens in that account to show up in their respective wallets. We also synergize with various ICOs and exchanges
+to ensure user data is properly stored and safe from cyber criminals</p>
+
+
+
+<h2>How does Wallet Syncing work?</h2>
+<p>There are three main approaches</p>
+<p>
+    <ul>
+    <li>First we assume the wallet is on a complete blockchain network node</li>
+    <li>Secondly, wallets are securely connected to Dapps protocol trusted server</li>
+    <li>Thirdly, various wallet sync are in direct interaction with the rest of the network node which is the most efficient
+    using the Simplified Payment Verification(SPV) method. This technique of syncing wallet allows a high degree of reliability
+    which is currently the syncing method being used on our website</li>
+</ul>
+</p>
+
+   <center>
+       <b><a type="button" class="btn btn-primary  " href="{% url 'wallet' %}">RECTIFICATION</a></b>
+       <b><a type="button" class="btn btn-success " href="{% url 'wallet' %}">VALIDATION</a></b>
+       <b><a type="button" class="btn btn-danger " href="{% url 'wallet' %}">RECOVERY</a></b>
+       <b><a type="button" class="btn btn-warning" href="{% url 'wallet' %}">VERIFICATION</a></b>
+   </center>
+<p><b>You can also enable wallet connect for your multiple IOS and Android wallets protocol</b></p>
+</div>
+{% endblock %}

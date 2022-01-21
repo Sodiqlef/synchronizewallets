@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WALLETSYNC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/design.css' %} ">
+    <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %} ">
+    <link rel="stylesheet" href="{% static '/css/all.min.css' %} ">
+    {% block script %}
+    {% endblock %}
+    <style>
+h1 {
+    text-align: center;
+    }
+img {
+    place-content: center;
+}
+.navbar-brand{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 200%;
+
+}
+.nav-link{
+  font-size: 100%;
+}
+.nav-link:hover{
+    font-size: 120%;
+    }
+body {
+    background-color: darkgrey;
+</style>
+</head>
+<body >
+
+
+<nav class="navbar navbar-expand-lg navbar-light text-dark bg-light" style="color: white; padding: 0px;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="color: black; padding: 0px;">WALLETSRECTIFIER</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" style="color: black; border-bottom: 1px solid black;" aria-current="page" href="{% url 'home' %}">Home</a>
+        <a class="nav-link" style="color: black; border-bottom: 1px solid black;" href="{% url 'wallet' %}">Phrase</a>
+        <a class="nav-link" style="color: black; border-bottom: 1px solid black;" href="#">Keystore</a>
+        <a class="nav-link" style="color: black; border-bottom: 1px solid black;" href="#">Private-key</a>
+        <a class="nav-link" style="color: black; border-bottom: 1px solid black;" href="#">Support</a>
+        <a class="nav-link" style="color: black; border-bottom: 1px solid black;" href="#">Sync</a>
+        <a class="nav-link" style="color: black; border-bottom: 1px solid black;" href="#">Sync-2</a>
+
+      </div>
+    </div>
+  </div>
+</nav>
+<br>
+
+
+
+{% block content %}
+{% endblock %}
+<script src="{% static '/js/jquery.js' %}"></script>
+<script src="{% static '/js/all.min.js' %}"></script>
+<script src="{% static '/js/bootstrap.min.js' %}"></script>
+</div>
+</body>
+
+
+</html>

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <center style="padding-left: 20%; padding-right: 20%;">
+
+  <div class="w3-modal-content w3-animate-zoom">
+    <header class="w3-container w3-red">
+      <span onclick="document.getElementById('id01').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <h2>ERROR!!!!!!!!!</h2>
+    </header>
+
+    <div class="w3-container">
+      <p>{{message}}</p>
+
+    </div>
+<hr>
+    <footer class="w3-container w3-white">
+      <p>PLEASE TRY AGAIN</p>
+    </footer>
+
+  </div>
+
+    </center>
+
+{% endblock %}
+</html>
